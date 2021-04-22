@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:blobs/blobs.dart';
 import 'package:new_app/widgets/customCard.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(MyApp());
 
@@ -61,24 +62,72 @@ class MyApp extends StatelessWidget {
                     Expanded(
                       child: Row(
                         children: [
-                          Expanded(child: CustomCardContainer()),
-                          Expanded(child: CustomCardContainer()),
+                          Expanded(
+                              child: CustomCardContainer(
+                                  icon: FontAwesomeIcons.thLarge,
+                                  size: 25.0,
+                                  name: 'General',
+                                  colors: [
+                                Color(0xff5BBEFA),
+                                Color(0xff499FF5)
+                              ])),
+                          Expanded(
+                              child: CustomCardContainer(
+                                  icon: FontAwesomeIcons.bus,
+                                  size: 25.0,
+                                  name: 'Transport',
+                                  colors: [
+                                Color(0xffB290FC),
+                                Color(0xff7054E0)
+                              ])),
                         ],
                       ),
                     ),
                     Expanded(
                       child: Row(
                         children: [
-                          Expanded(child: CustomCardContainer()),
-                          Expanded(child: CustomCardContainer()),
+                          Expanded(
+                              child: CustomCardContainer(
+                                  icon: FontAwesomeIcons.shoppingBag,
+                                  size: 25.0,
+                                  name: 'Shopping',
+                                  colors: [
+                                Color(0xffF1A1F2),
+                                Color(0xffea3cde)
+                              ])),
+                          Expanded(
+                              child: CustomCardContainer(
+                                  icon: FontAwesomeIcons.fileInvoice,
+                                  size: 25.0,
+                                  name: 'Bills',
+                                  colors: [
+                                Color(0xffF5C098),
+                                Color(0xffef8a4c)
+                              ])),
                         ],
                       ),
                     ),
                     Expanded(
                       child: Row(
                         children: [
-                          Expanded(child: CustomCardContainer()),
-                          Expanded(child: CustomCardContainer()),
+                          Expanded(
+                              child: CustomCardContainer(
+                                  icon: FontAwesomeIcons.video,
+                                  size: 25.0,
+                                  name: 'Entertainment',
+                                  colors: [
+                                Color(0xff86ABFA),
+                                Color(0xff4C77FE)
+                              ])),
+                          Expanded(
+                              child: CustomCardContainer(
+                                  icon: FontAwesomeIcons.appleAlt,
+                                  size: 25.0,
+                                  name: 'Shopping',
+                                  colors: [
+                                Color(0xff90EC9D),
+                                Color(0xff5dcb4c)
+                              ])),
                         ],
                       ),
                     ),
@@ -106,13 +155,13 @@ class MyApp extends StatelessWidget {
                             ),
                           ),
                           Icon(
-                            Icons.calendar_today_rounded,
-                            size: 25.0,
+                            FontAwesomeIcons.chartLine,
+                            size: 22.0,
                             color: Color(0xff70739B),
                           ),
                           Icon(
-                            Icons.calendar_today_rounded,
-                            size: 25.0,
+                            FontAwesomeIcons.user,
+                            size: 20.0,
                             color: Color(0xff70739B),
                           ),
                         ],
