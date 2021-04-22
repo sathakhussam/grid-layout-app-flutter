@@ -1,16 +1,20 @@
-# new_app
+## Grid Layout App
 
-A new Flutter project.
+**Grid Layout App** is a layout design made with flutter and other usable components.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+In your terminal, type these commands
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+#clone the repo
+git clone https://github.com/sathakhussam/crwn-clothing
+cd grid-layout-app-flutter
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#Running the App
+flutter run
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshot Of The APP
+
+![alt text](/screenshot/screenshot.png?raw=true)
