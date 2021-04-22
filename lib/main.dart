@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          color: Color(0xff33325E),
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color(0xff353569), Color(0xff272942)])),
           child: Stack(
             children: [
               Positioned(
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(20.0, 40.0, 0, 0),
+                      margin: EdgeInsets.fromLTRB(20.0, 30.0, 0, 0),
                       child: Text(
                         'Classify transaction',
                         style: TextStyle(
